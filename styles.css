@@ -12,5 +12,17 @@ background-color property to brown for the body element.
 */
 
 body {
-    background-color: brown;
+    background-color: burlywood;
   }
+
+/*
+Step 21
+
+The goal now is to make the div not take up the entire width of the page. The CSS width property is perfect for this. Create 
+a new type selector in the style sheet that gives your div element a width of 300px.
+
+*/
+
+div {
+    width: 300px;
+}
