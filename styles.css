@@ -9,12 +9,19 @@ Step 18
 The text is centered again so the link to the CSS file is working. Add another style to the file that changes the 
 background-color property to brown for the body element.
 
+Step 28
+
+Since the cafe's main product for sale is coffee, you could use an image of coffee beans for the background of the page.
+Delete the comment and its contents inside the body type selector. Now add a background-image property and set its value to 
+url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg).
+
+Note: the background-color: color; code needs to be deleted even though it was commented out in order for the background-image
+to work.
+
 */
 
 body {
-    /*
-    background-color: burlywood;
-    */
+    background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
   }
 
 /*
@@ -65,4 +72,51 @@ Change the existing div selector into a class selector by replacing div with a c
     margin-left: auto;
     margin-right: auto;
     
+}
+
+/*
+Step 33
+Using your new flavor class as a selector, set the text-align property's value to left.
+
+Step 35
+Now align the text to the right for the elements with the price class.
+
+Step 38
+That's closer, but the price didn't stay over on the right. This is because inline-block elements only take up the width 
+of their content. To spread them out, add a width property to the flavor and price class selectors that have a value of 
+50% each.
+
+Step 39
+Well that did not work. Styling the p elements as inline-block and placing them on separate lines in the code creates an 
+extra space to the right of the first p element, causing the second one to shift to the next line. One way to fix this is 
+to make each p element's width a little less than 50%.
+
+Change the width value to 49% for each class to see what happens.
+
+Step 41
+Now go ahead and change both the flavor and price class' widths to be 50% again.
+
+*/
+
+.flavor {
+    text-align: left;
+    width: 75%;
+    
+}
+
+.price {
+    text-align: right;
+    width: 25%;
+}
+
+/*
+Step 37
+The p elements are nested in an article element with the class attribute of item. You can style all the p elements nested 
+anywhere in elements with a class named item like this:
+.item p { }
+Using the above selector, add a display property with value inline-block so the p elements behave more like inline elements.
+*/
+
+.item p {
+    display: inline-block;
 }
